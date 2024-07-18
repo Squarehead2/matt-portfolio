@@ -1,0 +1,16 @@
+@keyframes pulseBig {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  75% {
+    transform: scale3d(4.05, 4.05, 4.05);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animatecss-pulseBig {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}

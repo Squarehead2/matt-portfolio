@@ -1,0 +1,13 @@
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.overflow-y-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Ensure scrolling is still possible */
+.overflow-y-scroll:hover {
+  overflow-y: scroll;
+}

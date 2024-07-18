@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.border-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px; /* Width of the line */
+  height: 100vh; /* Height of the line */
+  background-color: #d1d5db; /* Color of the line */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +45,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.overflow-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
